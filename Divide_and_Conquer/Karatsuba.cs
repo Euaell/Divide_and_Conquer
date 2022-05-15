@@ -2,7 +2,7 @@
 
 public class Karatsuba
 {
-    public static void PrintArr(IEnumerable<int>? arr)
+    public static void PrintArr<T>(IEnumerable<T>? arr)
     {
         if (arr == null) return;
         foreach (var va in arr)
@@ -10,7 +10,7 @@ public class Karatsuba
         Console.WriteLine();
     }
 
-    public static void PrintMat(int[][]? mat)
+    public static void PrintMat<T>(T[][]? mat)
     {
         if (mat == null) return;
         foreach (var t in mat)
@@ -172,7 +172,7 @@ public class Karatsuba
     }
 
 // "MergeSort" and "CountInversion"
-    public int Inv = 0;
+    public long Inv = 0;
     private int[] Merge(int[] arr1, int[] arr2)
     {
         var n = arr1.Length + arr2.Length;
@@ -196,12 +196,9 @@ public class Karatsuba
                     res[i] = arr2[k++];
                     // count inversion for every element in the second array that is less than the first array's elements
                     Inv += arr1.Length - j;
-                    Console.Write($"res[i]: {res[i]} Inv: {Inv}");
-                    
                 }
             }
         }
-        Console.WriteLine();
         return res;
     }
 
