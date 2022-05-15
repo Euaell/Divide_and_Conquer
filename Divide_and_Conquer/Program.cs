@@ -18,7 +18,13 @@ var d = new[] {1, 3, 5, 2, 4, 6};
 // string h = "2718281828459045235360287471352662497757247093699959574966967627";
 // Console.WriteLine(Karatsuba.Multiply(g, h));
 
-Karatsuba x1 = new Karatsuba();
-x1.MergeSort(c);
+// Karatsuba x1 = new Karatsuba();
+// x1.MergeSort(c);
+// Console.WriteLine(x1.Inv);
 
-Console.WriteLine(x1.Inv);
+// points = [[1,3],[-2,2]], k = 1
+// points = [[3,3],[5,-1],[-2,4]], k = 2
+// int[][] t1 = {new[] {3, 3}, new[] {5, -1}, new[] {-2, 4}};
+// int[][] t2 = {new[] {1, 3}, new[] {-2, 2}};
+// Memokeria m1 = new Memokeria();
+// Karatsuba.PrintMat(m1.KClosest(t1, 2));
