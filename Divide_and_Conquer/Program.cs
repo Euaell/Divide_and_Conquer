@@ -1,5 +1,4 @@
-﻿using System.IO;
-using Divide_and_Conquer;
+﻿using Divide_and_Conquer;
 
 int[] arr1 = {9, 2, 4, 8, 5, 6, 6, 7, 3, 1, 8};
 int[] x = { 2, 4, 5, 8};
